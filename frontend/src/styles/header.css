@@ -1,0 +1,14 @@
+.header-color {
+    background-color: #ce1212;
+}
+
+.header-logo {
+    height: 45px;
+    width: 45px;
+    margin-right: 15px;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+}

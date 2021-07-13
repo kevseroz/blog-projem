@@ -1,0 +1,108 @@
+
+
+
+ /*new*/
+ .image-size {
+      width: 100%; 
+      height: 25vw;
+      object-fit: cover;
+     
+ }
+
+ .text-size {
+  font-size: 25px;
+  align-items: baseline;
+  color: #515E63;
+ }
+
+ .title-size {
+  font-size: 30px;
+  color: #57837B;
+ }
+
+ .card-item{
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin: 10px 1%;
+      width: 100%;
+      background: #000000;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      transition: all .35s ease-in-out;
+      opacity: 0.7;
+      border: none;
+
+ }
+
+.card-item:hover {
+      opacity: 0.7;
+      filter: grayscale(100%);
+ }
+
+/*button*/
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: gray;
+  border: gray;
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.btn-one {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+

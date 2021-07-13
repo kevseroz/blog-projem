@@ -1,0 +1,19 @@
+.details-image {
+    margin-top: 25px;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.details-header {
+    font-size: 3rem;
+    color: #810000;
+}
+
+.details-desc {
+   
+    text-align: justify;
+}
+
+.details-link {
+    margin-top: 30px;
+}
